@@ -1,0 +1,42 @@
+$(document).ready(function(){
+    $("#signupForm").validate({
+        rules:{
+            fname:{
+                //required:true,
+                minlength:5,
+                //char:true
+            },
+            sname:{
+                //required:true,
+                minlength:5
+            },
+            phno:{
+               // required:true,
+                minlength:10,
+                number:true
+            },
+            pwd:{
+               // required:true,
+                //password:true,
+                minlength:7
+            },
+            day:{
+                //required:true
+            },
+            month:{
+                //required:true
+            },
+            year:{
+                //required:true
+            },
+            gender:{
+                //required:true
+            }
+        },
+        messages:{
+            phno:{
+                minlength:"enter valid phone number"
+            }
+        }
+    })
+})
